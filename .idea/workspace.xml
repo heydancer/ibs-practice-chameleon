@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b86fbdf3-68fc-4dff-b756-fe19db5005f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/qualit_plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/AddProductValidation.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/JdbcValidation.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/repositories/db.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/repositories/web-elements.xml" afterDir="false" />
+    <list default="true" id="b86fbdf3-68fc-4dff-b756-fe19db5005f1" name="Changes" comment="feat: добавлен test на проверку добавления товара через БД">
+      <change beforePath="$PROJECT_DIR$/.idea/qualit_plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/qualit_plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AddProductValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AddProductValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/repositories/web-elements.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/repositories/web-elements.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,35 +49,16 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Добавление товара в базу данных">
-    <configuration name="Feature: AddProductValidation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.run_configuration">
+    <configuration name="Scenario: Добавление овоща, экзотический = false" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/AddProductValidation.feature" />
-      <option name="GLUE" value="ru.ibsqa.chameleon" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="ibs-practice-chamelion" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: AddProductValidation" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="MakeProject" enabled="false" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Добавление товара в базу данных" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/JdbcValidation.feature" />
       <option name="GLUE" value="ru.ibs ru.ibsqa.chameleon" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="ibs-practice-chamelion" />
-      <option name="NAME_FILTER" value="^Добавление товара в базу данных$" />
-      <option name="PROGRAM_PARAMETERS" value="--plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Добавление товара в базу данных$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Добавление товара в базу данных" />
+      <option name="NAME_FILTER" value="^Добавление овоща\, экзотический \= false$" />
+      <option name="PROGRAM_PARAMETERS" value="--plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Добавление овоща\, экзотический \= false$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Добавление овоща, экзотический = false" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -146,6 +119,26 @@
       <option name="NAME_FILTER" value="^$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: " />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="MakeProject" enabled="false" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Добавление товара в базу данных" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/JdbcValidation.feature" />
+      <option name="GLUE" value="ru.ibs ru.ibsqa.chameleon" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ibs-practice-chamelion" />
+      <option name="NAME_FILTER" value="^Добавление товара в базу данных$" />
+      <option name="PROGRAM_PARAMETERS" value="--plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Добавление товара в базу данных$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Добавление товара в базу данных" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -297,11 +290,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Добавление овоща, экзотический = false" />
+        <item itemvalue="Cucumber Java.Scenario: " />
         <item itemvalue="Cucumber Java.Scenario: Добавление товара в базу данных" />
         <item itemvalue="Cucumber Java.Scenario:  (2)" />
-        <item itemvalue="Cucumber Java.Scenario: " />
         <item itemvalue="Cucumber Java.Scenario:  (1)" />
-        <item itemvalue="Cucumber Java.Feature: AddProductValidation" />
       </list>
     </recent_temporary>
   </component>
@@ -319,11 +312,24 @@
       <workItem from="1693830481236" duration="93000" />
       <workItem from="1693830585411" duration="4945000" />
       <workItem from="1693836251153" duration="4965000" />
-      <workItem from="1693924414740" duration="5641000" />
+      <workItem from="1693924414740" duration="9053000" />
+      <workItem from="1693937835327" duration="8241000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: добавлен test на проверку добавления товара через БД">
+      <created>1693934440088</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693934440089</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: добавлен test на проверку добавления товара через БД" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: добавлен test на проверку добавления товара через БД" />
   </component>
 </project>

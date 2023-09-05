@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Pages xmlns="http://chameleon.ibs-qa.ru/schema/web-elements">
     <Page name="Главная страница">
-        <Button name="NAVBAR_DROPDOWN" locator="//a[@id='navbarDropdown']"/>
-        <Button locator="//a[@href='/food']" name="Товары"/>
+        <ComboBox locator="//a[@id='navbarDropdown']" name="Выпадающий список -> Песочница"/>
+        <Link locator="//a[@href='/food']" name="Элемент выпадающего списка -> Товары"/>
+    </Page>
+    <Page name="Товары">
+        <Button locator="//button[text()='Добавить']" name="Кнопка -> Добавить"/>
+        <StaticText name="Последний элемент таблицы" locator="//tbody/tr[last()]"/>
+    </Page>
+    <Page name="Окно добавление товара" locator="//div[@class='modal-content']">
+        <TextInput name="Поле ввода -> Наименование" locator="//input[@id='name']"/>
+        <Button name="Выпадающий список -> Выбрать овощ" locator="//option[@value='VEGETABLE']"/>
+        <Button name="Выпадающий список -> Выбрать фрукт" locator="//option[@value='FRUIT']"/>
+        <Button name="Кнопка сохранить продукт" locator="//button[@id='save']"/>
+        <Button name="Закрыть окно -> Добавление товара" locator="//button[@class='close']"/>
+        <CheckBox name="Чекбокс поля -> Экзотический" locator="//input[@id='exotic']"/>
+        <StaticText name="Статическое поле -> Наименование" locator="//label[text()='Наименование']"/>
+        <StaticText name="Статическое поле -> Тип" locator="//label[text()='Тип']"/>
     </Page>
 </Pages>

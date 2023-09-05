@@ -27,12 +27,12 @@
         <Setting>
           <option name="name" value="defaultWaitTimeOut" />
           <option name="type" value="text" />
-          <option name="value" value="10" />
+          <option name="value" value="20" />
         </Setting>
         <Setting>
           <option name="name" value="implicitlyWait" />
           <option name="type" value="text" />
-          <option name="value" value="0" />
+          <option name="value" value="" />
         </Setting>
         <Setting>
           <option name="name" value="closeDriverAfterTest" />
