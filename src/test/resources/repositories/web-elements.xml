@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pages xmlns="http://chameleon.ibs-qa.ru/schema/web-elements">
+    <Page name="Главная страница">
+        <Button name="NAVBAR_DROPDOWN" locator="//a[@id='navbarDropdown']"/>
+        <Button locator="//a[@href='/food']" name="Товары"/>
+    </Page>
+</Pages>

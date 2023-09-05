@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DbGears xmlns="http://chameleon.ibs-qa.ru/schema/db">
+    <Connection name="H2" driver="org.h2.Driver" url="jdbc:h2:tcp://localhost:9092/mem:testdb;user=#{user};password=#{password}" autoCommit="true">
+        <Params>
+            <FieldString name="Пользователь" locator="user"/>
+            <FieldString name="Пароль" locator="password"/>
+        </Params>
+    </Connection>
+    <Query name="Показать все таблицы" statement="SHOW TABLES">
+        <Result>
+            <FieldString name="Название таблицы" locator="TABLE_NAME"/>
+        </Result>
+    </Query>
+    <Query name="Добавление товара в таблицу" statement="INSERT INTO FOOD(food_name, food_type, food_exotic) values(:food_name, :food_type, :food_exotic)">
+        <Params>
+            <FieldString name="Название товара" locator="food_name"/>
+            <FieldString name="Тип товара" locator="food_type"/>
+            <FieldInteger name="Экзотик тип" locator="food_exotic"/>
+        </Params>
+    </Query>
+    <Query name="Показать последний добавленный элемент" statement="select * from food order by food_id desc limit 1;">
+        <Result>
+            <FieldInteger name="Идентификатор товара" locator="FOOD_ID"/>
+            <FieldString name="Название товара" locator="FOOD_NAME"/>
+            <FieldString name="Тип товара" locator="FOOD_TYPE"/>
+            <FieldInteger name="Экзотик тип" locator="FOOD_EXOTIC"/>
+        </Result>
+    </Query>
+    <Query name="Удалить товар из таблицы" statement="DELETE FROM FOOD WHERE FOOD_NAME=:FOOD_NAME">
+        <Params>
+            <FieldString name="Название товара" locator="FOOD_NAME"/>
+        </Params>
+    </Query>
+</DbGears>
